@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="campo">
+      <h1 id="titulo">Cadastro</h1>
+      <p id="subtitulo">Digite suas informações</p>
+    </div>
+
+    <form>
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome"><strong>Nome</strong></label>
+          <input type="text" name="nome" id="nome" required />
+        </div>
+
+        <div class="campo">
+          <label for="sobrenome"><strong>Sobrenome</strong></label>
+          <input type="text" name="sobrenome" id="sobrenome" required />
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <label for="email"> <strong>E-mail</strong></label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div class="campo">
+        <label><strong>Qual opção descreve melhor sua função?</strong></label
+        ><br />
+        <label>
+          <input
+            type="radio"
+            name="atualmente"
+            value="estudante"
+            checked
+          />Estudante
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="atualmente"
+            value="estagio"
+            checked
+          />Estagio
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="atualmente"
+            value="período integral"
+          />Período integral
+        </label>
+        <label>
+          <input type="radio" name="atualmente" value="meio periodo" />Meio
+          periodo
+        </label>
+      </div>
+      <div class="campo">
+        <label for="seniorliade"><strong>Estado</strong></label>
+        <select id="seniorlidade">
+          <option selected disabled value="">Selecione</option>
+          <option>Rio de Janeiro</option>
+          <option>São Paulo</option>
+          <option>Espirito Santo</option>
+        </select>
+      </div>
+
+      <fieldset id="check">
+        <label><strong>Selecione as tecnologias que utiliza</strong></label
+        ><br /><br />
+        <input type="checkbox" id="tecnologia 1 " value="HTML" />
+        <label for="tecnologia1">HTML</label>
+        <input type="checkbox" id="tecnologia 2 " value="CSS" />
+        <label for="tecnologia1">CSS</label>
+        <input type="checkbox" id="tecnologia 3 " value="Javascript" />
+        <label for="tecnologia1">Javascript</label>
+        <input type="checkbox" id="tecnologia 5 " value="#C" />
+        <label for="tecnologia1">#C</label>
+        <input type="checkbox" id="tecnologia 6 " value="Python" />
+        <label for="tecnologia1">Python</label>
+        <input type="checkbox" id="tecnologia 7 " value="Java" />
+        <label for="tecnologia1">Java</label>
+      </fieldset>
+
+      <div class="campo">
+        <br />
+        <label><strong>Conte um pouco sobre você</strong></label>
+        <textarea
+          row="6"
+          style="width: 28em"
+          id="experiencia"
+          name="experiencia"
+        ></textarea>
+      </div>
+      <button class="botao" type="submit">Concluido</button>
+    </form>
+  </body>
+</html>
